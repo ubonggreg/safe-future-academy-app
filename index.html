@@ -2,46 +2,22 @@
 <html>
 <head>
     <title>Safe Future Academy</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <div class="container">
-        <h1>Safe Future Academy</h1>
-        <p class="tagline">Breeding for the Future</p>
-
-        <a href="#registration">
-            <button>Register Child</button>
-        </a>
-    </div>
-
-    <script src="script.js"></script>
-</body>
-</html><hr>
-
-<div id="registration" class="container">
-    <h2>Child Registration Form</h2>
+    <h1>Safe Future Academy</h1>
 
     <form id="childForm">
-        <input type="text" id="childName" placeholder="Child Name" required><br><br>
-
-        <input type="date" id="dob" required><br><br>
-
-        <input type="text" id="parentName" placeholder="Parent Name" required><br><br>
-
-        <input type="tel" id="phone" placeholder="Parent Phone Number" required><br><br>
-
-        <textarea id="allergies" placeholder="Allergies / Medical Notes"></textarea><br><br>
-
-        <button type="submit">Submit Registration</button>
+        <input type="text" id="childName" placeholder="Child Name" required>
+        <input type="text" id="parentName" placeholder="Parent Name" required>
+        <button type="submit">Register</button>
     </form>
 
-    <p id="successMessage"></p>
-</div><hr>
-
-<div class="container">
     <h2>Registered Children</h2>
-    <p>Total Registered: <span id="totalCount">0</span></p>
+    <p>Total: <span id="totalCount">0</span></p>
     <ul id="childrenList"></ul>
-</div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

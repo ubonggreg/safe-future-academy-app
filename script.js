@@ -1,26 +1,28 @@
+console.log("JS Loaded");
+
 let children = [];
 
-document.getElementById("childForm").addEventListener("submit", function(event) {
+let form = document.getElementById("childForm");
+
+form.addEventListener("submit", function(event) {
     event.preventDefault();
 
     let childName = document.getElementById("childName").value;
-    let dob = document.getElementById("dob").value;
     let parentName = document.getElementById("parentName").value;
 
     let child = {
         name: childName,
-        dateOfBirth: dob,
         parent: parentName
     };
 
     children.push(child);
 
-    displayChildren();
+    updateList();
 
-    document.getElementById("childForm").reset();
+    form.reset();
 });
 
-function displayChildren() {
+function updateList() {
     let list = document.getElementById("childrenList");
     list.innerHTML = "";
 
